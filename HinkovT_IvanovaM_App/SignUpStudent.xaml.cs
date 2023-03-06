@@ -24,7 +24,7 @@ namespace HinkovT_IvanovaM_App
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=(localdb)\LABSCIFIPC04\LOCALHOST; Initial Catalog=project_Semester1; Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC04\LOCALHOST; Initial Catalog=project_Semester1; Integrated Security=True");
 
             try
             {
@@ -36,7 +36,7 @@ namespace HinkovT_IvanovaM_App
 
                 //Build our actual query 
 
-                string query = "INSERT INTO Register_Student(Student_Firstname,Student_LastName,Student_Email,Student_Username,Student_Password,Student_Phone,Aadhar)values ('" + this.txtFirst_name.Text + "','" + this.txtSecond_name.Text + "','" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "') ";
+                string query = "INSERT INTO Register_Student(Student_Firstname,Student_LastName,Student_Email,Student_Username,Student_Password,Student_Phone,Student_Aadhaar)values ('" + this.txtFirst_name.Text + "','" + this.txtSecond_name.Text + "','" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.txtPhone_Number.Text + "','" + this.txtAadhar.Text + "') ";
 
                 //Establish a sql command
 
@@ -46,7 +46,7 @@ namespace HinkovT_IvanovaM_App
 
                 MessageBox.Show("Successfully saved");
 
-                LogInMain signupstudysubmit = new LogInMain();
+                Info signupstudysubmit = new Info();
                 signupstudysubmit.Show();
                 this.Close();
 
@@ -71,6 +71,5 @@ namespace HinkovT_IvanovaM_App
         //LogInMain signupstudysubmit = new LogInMain();
         //signupstudysubmit.Show();
         //this.Close();
-    }
     }
 }

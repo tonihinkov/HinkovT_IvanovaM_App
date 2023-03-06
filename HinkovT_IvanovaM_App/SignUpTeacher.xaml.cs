@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,9 +27,51 @@ namespace HinkovT_IvanovaM_App
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            Info signupteachsubmit = new Info();
-            signupteachsubmit.Show();
-            this.Close();
+
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC04\LOCALHOST; Initial Catalog=project_Semester1; Integrated Security=True");
+
+            try
+            {
+
+
+                //opening the connection to the db 
+
+                sqlCon.Open();
+
+                //Build our actual query 
+
+                string query = "INSERT INTO Register_Instructor(Instructor_ID,Instructor_Username,Instructor_Password,Instructor_FirstName,Instructor_LastName,Instructor_Email)values ('" + this.txtID.Text + "','" + this.txtUsername.Text + "','" + this.txtPassword.Text + "','" + this.txtFirst_name.Text + "','" + this.txtSecond_name.Text + "','" + this.txtEmail.Text + "') ";
+
+                //Establish a sql command
+
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Successfully saved");
+
+                Info signupteachsubmit = new Info();
+                signupteachsubmit.Show();
+                this.Close();
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                MessageBox.Show(ex.Message);
+
+            }
+
+            finally
+
+            {
+
+                sqlCon.Close();
+
+            }
         }
+
     }
 }

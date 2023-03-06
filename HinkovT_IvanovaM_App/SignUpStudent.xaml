@@ -46,8 +46,6 @@
         <TextBox x:Name="txtSecond_name" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="5" Grid.RowSpan="2"/>
         <TextBox x:Name="txtEmail" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="6" Grid.RowSpan="2"/>
         <TextBox x:Name="txtUsername" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="7" Grid.RowSpan="2"/>
-        <!--<TextBox x:Name="txtPassword" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="8" Grid.RowSpan="2"/>-->
-
         <TextBox x:Name="txtPhone_Number" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="9" Grid.RowSpan="2"/>
         <TextBox x:Name="txtAadhar" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="10" Grid.RowSpan="2"/>
         <Button Content=" Submit" Background="Lavender" Foreground=" Black" FontSize="20" HorizontalAlignment=" Center" VerticalAlignment="Top" Click="Submit_Click" FontFamily="Constantia" Margin="127,10.333,144,0" Grid.Row="12" Height="55" Grid.RowSpan="2" Width="117">
@@ -57,7 +55,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <PasswordBox HorizontalAlignment="Left" Grid.Row="8" VerticalAlignment="Top" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,31,0,0" Width="368" Height="28" Grid.RowSpan="2"/>
+        <PasswordBox x:Name="PasswordBox" Grid.Row="8" VerticalAlignment="Top" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,31,0,0" Width="368" Height="28" Grid.RowSpan="2"/>
     </Grid>
 
 </Window>
