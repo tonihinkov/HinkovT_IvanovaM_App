@@ -28,7 +28,7 @@ namespace HinkovT_IvanovaM_App
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
 
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC04\LOCALHOST; Initial Catalog=project_Semester1; Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=PC-SOFIA; Initial Catalog=project_Semester1; Integrated Security=True");
 
             try
             {

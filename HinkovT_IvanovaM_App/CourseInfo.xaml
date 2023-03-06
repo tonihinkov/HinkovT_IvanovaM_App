@@ -35,9 +35,15 @@
         <Rectangle Fill="AliceBlue" Grid.Row="1" HorizontalAlignment="Left" Height="131" Stroke="White" VerticalAlignment="Top" Width="393" />-->
         <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="4" Stroke="AliceBlue" VerticalAlignment="Top" Width="368" Margin="10,29.667,0,0" Grid.Row="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="-7,23,-5,0" TextWrapping=" Wrap" VerticalAlignment="Top" FontSize=" 50" Width="400" TextAlignment=" Center" FontFamily="Constantia" Grid.RowSpan="2" Text="Course Info"/>
-        <Label Content="Number of Students:" Foreground=" Black" FontSize="20" Grid.Row="4" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,0,-22,27.333" Height="32" ></Label>
+        <Label Content="Course ID:" Foreground=" Black" FontSize="20" Grid.Row="3" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,0,-22,27.333" Height="32" ></Label>
+        <TextBlock HorizontalAlignment="Left" Margin="20,32.333,0,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding CourseID}" VerticalAlignment="Top" Width="368"/>
+        <Label Content="Number of Students:" Foreground=" Black" FontSize="20" Grid.Row="3" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,59,-22,27.667" Height="32" Grid.RowSpan="2" ></Label>
+        <TextBlock HorizontalAlignment="Left" Margin="20,32,0,0" Grid.Row="4" TextWrapping="Wrap" Text="{Binding NumberOfStuds}" VerticalAlignment="Top" Width="368"/>
         <Label Content="Field of the Course:" Foreground=" Black" FontSize="20" Grid.Row="4" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,59,-22,27.667" Height="32" Grid.RowSpan="2" ></Label>
+        <TextBlock HorizontalAlignment="Left" Margin="10,32.333,0,0" Grid.Row="5" TextWrapping="Wrap" Text="{Binding CourseField}" VerticalAlignment="Top" Width="368"/>
         <Label Content="Istructor of this Course:" Foreground=" Black" FontSize="20" Grid.Row="6" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,0,-22,27.333" Height="32" ></Label>
+        <TextBlock HorizontalAlignment="Left" Margin="10,32,0,0" Grid.Row="6" TextWrapping="Wrap" Text="{Binding Teacher}" VerticalAlignment="Top" Width="368"/>
+
         <!--<TextBox x:Name="txtNumber_of_Students" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="4" Grid.RowSpan="2"/>
         <TextBox x:Name="txtField_of_the_Course" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="5" Grid.RowSpan="2"/>
         <TextBox x:Name="Istructor_of_this_Course" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="6" Grid.RowSpan="2"/>-->
