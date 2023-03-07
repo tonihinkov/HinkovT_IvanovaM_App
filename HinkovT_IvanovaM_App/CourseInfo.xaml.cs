@@ -26,11 +26,11 @@ namespace HinkovT_IvanovaM_App
         {
 
         }
-        public CourseInfo(string courseID, string courseField, int teacher, int numberOfStuds)
+        public CourseInfo(string courseID, string courseField/*, int teacher, int numberOfStuds*/)
         {
             InitializeComponent();
 
-            DataContext = new CourseInfoViewModel(courseID, courseField, teacher, numberOfStuds);
+            DataContext = new CourseInfoViewModel(courseID, courseField/*, teacher, numberOfStuds*/);
         }
 
         private void GoBack2_Click(object sender, RoutedEventArgs e)
@@ -47,10 +47,10 @@ namespace HinkovT_IvanovaM_App
     {
         public string CourseID { get; set; }
         public string CourseField { get; set; }
-        public string Teacher { get; set; }
-        public string NumberOfStuds { get; set; }
+        //public string Teacher { get; set; }
+        //public string NumberOfStuds { get; set; }
 
-        public CourseInfoViewModel(string courseID, string courseField, int teacher, int numberOfStuds)
+        public CourseInfoViewModel(string courseID, string courseField/*, int teacher, int numberOfStuds*/)
         {
             CourseID = courseID;
             CourseField = courseField;

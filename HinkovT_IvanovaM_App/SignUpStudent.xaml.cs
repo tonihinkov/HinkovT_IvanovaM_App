@@ -24,7 +24,7 @@ namespace HinkovT_IvanovaM_App
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=PC-SOFIA; Initial Catalog=project_Semester1; Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC04\LOCALHOST; Initial Catalog=project_Semester1; Integrated Security=True");
 
             try
             {
@@ -44,11 +44,25 @@ namespace HinkovT_IvanovaM_App
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Successfully saved");
+                if (txtAadhar.Text.Length != 12)
+                {
+                    MessageBox.Show("Has to be 12 integers.");
 
-                Info signupstudysubmit = new Info();
-                signupstudysubmit.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Successfully saved");
+
+                }
+
+                //Info signupstudysubmit = new Info();
+                //signupstudysubmit.Show();
+
+
+
                 this.Close();
+
+
 
             }
 
