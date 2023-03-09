@@ -29,11 +29,11 @@
         <Border Margin="0,0,0.333,0" Grid.RowSpan="14">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="SlateGray" Offset="0.4"/>
-                    <GradientStop Color="AliceBlue" Offset="0.8"/>
+                    <GradientStop Color="Orange" Offset="0.4"/>
+                    <GradientStop Color="DarkCyan" Offset="0.8"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Go to Info" Background="Lavender" Foreground=" Black" FontSize="20" HorizontalAlignment=" Center" VerticalAlignment="Top" Click="GoBack3_Click" FontFamily="Constantia" Margin="139,723,137.333,0" Height="55" Width="117">
+            <Button Content="Go to Info" Background="White" BorderBrush="White" Foreground=" Black" FontSize="20" HorizontalAlignment=" Center" VerticalAlignment="Top" Click="GoBack3_Click" FontFamily="Monospac821 BT" Margin="120,723,123.333,0" Height="55" Width="150">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="30"/>
@@ -41,13 +41,13 @@
                 </Button.Resources>
             </Button>
         </Border>
-        <TextBlock  HorizontalAlignment="Left" Margin="0,23,-12,0" TextWrapping=" Wrap" VerticalAlignment="Top" FontSize="50" Width="400" TextAlignment=" Center" FontFamily="Constantia" Grid.RowSpan="2" Text="Campus Info"/>
-        <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="4" Stroke="AliceBlue" VerticalAlignment="Top" Width="368" Margin="10,29.667,0,0" Grid.Row="1"/>
-        <Border BorderBrush="AliceBlue" BorderThickness="10" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10.333,59.333" Grid.Row="5" Grid.RowSpan="5" Height="216" Width="373">
+        <TextBlock  HorizontalAlignment="Left" Margin="0,23,-12,0" TextWrapping=" Wrap" VerticalAlignment="Top" FontSize="50" Width="400" TextAlignment=" Center" FontFamily="Monospac821 BT" Grid.RowSpan="2" Text="Campus Info"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="4" Stroke="White" VerticalAlignment="Top" Width="393" Margin="0,29.667,0,0" Grid.Row="1"/>
+        <Border BorderBrush="White" BorderThickness="10" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10.333,59.333" Grid.Row="5" Grid.RowSpan="5" Height="216" Width="373">
             <Image Source="H:\2022-2023\uni.jpg" HorizontalAlignment="Center" Height="255" Margin="7.333,-22.667,7.667,-21.667" Grid.Row="5" Grid.RowSpan="5" VerticalAlignment="Center" Width="353"/>
         </Border>
-        <TextBlock HorizontalAlignment="Center" Margin="10,0" Grid.Row="4" TextWrapping="Wrap" FontSize="35" TextAlignment=" Center" Text="This is our campus!" FontFamily="Constantia" VerticalAlignment="Top" Width="368"/>
-        <TextBlock HorizontalAlignment="Center" Margin="10,0.333,10,0" Grid.Row="9" TextWrapping="Wrap" FontSize="25" TextAlignment=" Center" Text="Our campus was renovated in 2020 and it was rated as one of the top 10 most innovative campuses in the world!" FontFamily="Constantia" VerticalAlignment="Top" Width="368" Height="166" Grid.RowSpan="3"/>
+        <TextBlock HorizontalAlignment="Center" Margin="10,0" Grid.Row="4" TextWrapping="Wrap" FontSize="30" TextAlignment=" Center" Text="This is our campus!" FontFamily="Monospac821 BT" VerticalAlignment="Top" Width="368"/>
+        <TextBlock HorizontalAlignment="Center" Margin="10,0.333,10,0" Grid.Row="9" TextWrapping="Wrap" FontSize="25" TextAlignment=" Center" Text="Our campus was renovated in 2020 and it was rated as one of the top 10 most innovative campuses in the world!" FontFamily="Monospac821 BT" VerticalAlignment="Top" Width="368" Height="166" Grid.RowSpan="3"/>
         <!--<Label Content="First name:" Foreground=" Black" FontSize="10" Grid.Row="4" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,10,-22,26.667" ></Label>
         <Label Content="Second name:" Foreground=" Black" FontSize="10" Grid.Row="5" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,10.333,-22,27" ></Label>
         <Label Content="Email:" Foreground=" Black" FontSize="10" Grid.Row="6" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,10,-22,27.333" ></Label>

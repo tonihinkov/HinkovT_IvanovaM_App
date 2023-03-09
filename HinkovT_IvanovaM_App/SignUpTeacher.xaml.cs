@@ -40,7 +40,7 @@ namespace HinkovT_IvanovaM_App
 
                 //Build our actual query 
 
-                string query = "INSERT INTO Register_Instructor(Instructor_ID,Instructor_Username,Instructor_Password,Instructor_FirstName,Instructor_LastName,Instructor_Email)values ('" + this.txtID.Text + "','" + this.txtUsername.Text + "','" + this.txtPassword.Text + "','" + this.txtFirst_name.Text + "','" + this.txtSecond_name.Text + "','" + this.txtEmail.Text + "') ";
+                string query = "INSERT INTO Register_Instructor(Instructor_ID,Instructor_Username,Instructor_Password,Instructor_FirstName,Instructor_LastName,Instructor_Email)values ('" + this.txtID.Text + "','" + this.txtUsername.Text + "','" + this.txtPassword.Password + "','" + this.txtFirst_name.Text + "','" + this.txtSecond_name.Text + "','" + this.txtEmail.Text + "') ";
 
                 //Establish a sql command
 

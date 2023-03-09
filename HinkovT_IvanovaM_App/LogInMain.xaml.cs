@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Data;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -32,43 +33,41 @@ namespace HinkovT_IvanovaM_App
             try
             {
 
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+                string query = "SELECT COUNT(1) FROM LogInTest Where ID=@ID and username=@username and pass=@pass";
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.Parameters.AddWithValue("@ID", txtID.Text);
+                sqlCmd.Parameters.AddWithValue("@username", txtUsername.Text);
+                sqlCmd.Parameters.AddWithValue("@pass", txtPassword.Password);
 
-                //opening the connection to the db 
+                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                if (count == 1)
+                {
+                    Info loginsubmit = new Info();
+                    loginsubmit.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Username or password are not correct!");
+                }
 
-                sqlCon.Open();
 
-                //Build our actual query 
-
-                string query = "SELECT * FROM LogInTest(ID, username, pass)values ('" + this.txtID.Text + "','" + this.txtUsername.Text + "','" + "') ";
-
-                //Establish a sql command
-
-                SqlCommand cmd = new SqlCommand(query, sqlCon);
-
-                cmd.ExecuteNonQuery();
-
-                this.Close();
             }
-
             catch (Exception ex)
-
             {
 
                 MessageBox.Show(ex.Message);
-
             }
-
             finally
-
             {
-
                 sqlCon.Close();
-
             }
 
-            Info loginsubmit = new Info();
-            loginsubmit.Show();
-            this.Close();
+
+
         }
     }
 }

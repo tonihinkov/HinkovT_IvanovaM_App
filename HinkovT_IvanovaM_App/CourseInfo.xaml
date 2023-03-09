@@ -26,27 +26,27 @@
         <Border Grid.RowSpan="14" Margin="3,0,-3,0">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="SlateGray" Offset="0.4"/>
-                    <GradientStop Color="AliceBlue" Offset="0.8"/>
+                    <GradientStop Color="Orange" Offset="0.4"/>
+                    <GradientStop Color="DarkCyan" Offset="0.8"/>
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
         <!--<Rectangle Fill="AliceBlue" Grid.Row="0" HorizontalAlignment="Left" Height="131" Stroke="White" VerticalAlignment="Top" Width="393" />
         <Rectangle Fill="AliceBlue" Grid.Row="1" HorizontalAlignment="Left" Height="131" Stroke="White" VerticalAlignment="Top" Width="393" />-->
-        <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="4" Stroke="AliceBlue" VerticalAlignment="Top" Width="368" Margin="11,29.333,0,0" Grid.Row="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="-7,23,-5,0" TextWrapping=" Wrap" VerticalAlignment="Top" FontSize=" 50" Width="400" TextAlignment=" Center" FontFamily="Constantia" Grid.RowSpan="2" Text="Course Info"/>
-        <Label Content="Course ID:" Foreground=" Black" FontSize="20" Grid.Row="3" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,0,-22,27.333" Height="32" ></Label>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="4" Stroke="White" VerticalAlignment="Top" Width="388" Margin="0,29.333,0,0" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-7,23,-5,0" TextWrapping=" Wrap" VerticalAlignment="Top" FontSize=" 50" Width="400" TextAlignment=" Center" FontFamily="Monospac821 BT" Grid.RowSpan="2" Text="Course Info"/>
+        <Label Content="Course ID:" Foreground=" Black" FontSize="20" Grid.Row="3" HorizontalAlignment=" Center" FontFamily="Monospac821 BT" VerticalAlignment=" Center" Width="400" Margin="10,0,-22,27.333" Height="32" ></Label>
         <TextBlock x:Name="txtCourseID" HorizontalAlignment="Left" FontSize="20" Margin="20,32.333,0,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding CourseID}" VerticalAlignment="Top" Width="368"/>
         <!--<Label Content="Number of Students:" Foreground=" Black" FontSize="20" Grid.Row="3" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,59,-22,27.667" Height="32" Grid.RowSpan="2" ></Label>
         <TextBlock x:Name="txtNOS" HorizontalAlignment="Left" Margin="20,32,0,0" Grid.Row="4" TextWrapping="Wrap" Text="{Binding NumberOfStuds}" VerticalAlignment="Top" Width="368"/>-->
-        <Label Content="Field of the Course:" Foreground=" Black" FontSize="20" Grid.Row="4" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,59,-22,27.667" Height="32" Grid.RowSpan="2" ></Label>
+        <Label Content="Field of the Course:" Foreground=" Black" FontSize="20" Grid.Row="4" HorizontalAlignment=" Center" FontFamily="Monospac821 BT" VerticalAlignment=" Center" Width="400" Margin="10,59,-22,27.667" Height="32" Grid.RowSpan="2" ></Label>
         <TextBlock x:Name="txtFOC" HorizontalAlignment="Left" FontSize="20" Margin="10,32.333,0,0" Grid.Row="5" TextWrapping="Wrap" Text="{Binding CourseField}" VerticalAlignment="Top" Width="368"/>
         <!--<Label Content="Istructor of this Course:" Foreground=" Black" FontSize="20" Grid.Row="6" HorizontalAlignment=" Center" FontFamily="Constantia" VerticalAlignment=" Center" Width="400" Margin="10,0,-22,27.333" Height="32" ></Label>
         <TextBlock x:Name="txtIOC" HorizontalAlignment="Left" Margin="10,32,0,0" Grid.Row="6" TextWrapping="Wrap" Text="{Binding Teacher}" VerticalAlignment="Top" Width="368"/>-->
         <!--<TextBox x:Name="txtNumber_of_Students" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="4" Grid.RowSpan="2"/>
         <TextBox x:Name="txtField_of_the_Course" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="5" Grid.RowSpan="2"/>
         <TextBox x:Name="Istructor_of_this_Course" Background=" White" Foreground=" Black" FontSize=" 10" Margin="10,32,10,59" Grid.Row="6" Grid.RowSpan="2"/>-->
-        <Button Content=" Go to Info" Background="Lavender" Foreground=" Black" FontSize="20" HorizontalAlignment=" Center" VerticalAlignment="Top" Click="GoBack2_Click" FontFamily="Constantia" Margin="127,10.333,144,0" Grid.Row="12" Height="55" Grid.RowSpan="2" Width="117">
+        <Button Content="Go to Info" Background="White" BorderBrush="White" Foreground=" Black" FontSize="20" HorizontalAlignment=" Center" VerticalAlignment="Top" Click="GoBack2_Click" FontFamily="Monospac821 BT" Margin="119,9.667,119,0" Grid.Row="7" Height="55" Grid.RowSpan="2" Width="150">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="30"/>
